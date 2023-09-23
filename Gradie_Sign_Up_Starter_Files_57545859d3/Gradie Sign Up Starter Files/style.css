@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Assets/Background.png);
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 1rem;
+}
+
+.container {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 0 0 .5rem .5rem;
+    max-width: 350px;
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #013243;
+    width: 100%;
+}
+
+.left-side h2 {
+    margin-top: 10%;
+    color: #fff;
+    font-size: 600;
+    font-size: 1.8rem;
+}
+
+.left-side .lead {
+    margin-top: 2%;
+    color: #f1f1f1ab;
+    font-size: 14px;
+}
+
+.left-side img {
+    margin-top: -25%;
+    position: relative;
+    bottom: 0px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.right-side {
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.right-side h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.right-side .input {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    font-weight: 600;
+}
+
+.input input {
+    margin-top: 2%;
+    padding: 1rem;
+    border-radius: .3rem;
+    border: 1px solid #bdbdbd;
+    width: 100%;
+}
+
+.right-side .tos {
+    margin-top: 5%;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    gap: .5rem;
+}
+
+.tos input {
+    margin-top: 2%;
+}
+
+.tos p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 22ch;
+    line-height: 1.5;
+}
+
+.tos p span {
+    text-decoration: underline;
+    color: #013243;
+    font-weight: 600;
+}
+
+.right-side .btn {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background-color: #013243;
+    padding: 1rem;
+    border-radius: .3rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (width > 1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 671px;
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+
+    .right-side {
+        border-radius: 0;
+    }
+}
